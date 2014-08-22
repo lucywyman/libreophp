@@ -1,0 +1,278 @@
+/*Big, long, messy css file*/
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 0px;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*Common styles*/
+h1, h2, h3, h4, h5, p, a{
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	display: block;
+	line-height: 1.3em;
+}
+
+h1{
+	font-size: 60px;
+}
+
+h2{
+	font-size: 50px;
+}
+
+h3{
+	font-size: 40px;
+}
+
+h4{
+	font-size: 30px;
+}
+
+p, a{
+	font-size: 20px;
+}
+
+/*Header styles*/
+#mainnav{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	background: #14C3A2;
+	height: 70px;
+	position: fixed;
+	z-index: 10;
+}
+
+#mainnav ul{
+	text-align: left;
+	margin-left: 10px;
+}
+
+#mainnav ul li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#mainnav ul li a{
+	color: #595B5A;
+	font-weight: 600;
+	line-height: 70px;
+	padding: 0px 10px;
+}
+
+#mainnav ul li a:hover {
+	color: #14C3A2;
+	background: #595B5A;
+}
+
+#mainnav ul li p {
+	font-family: 'Lemon', cursive;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 600;
+	padding: 0px 10px;
+	line-height: 70px;
+	margin: 0px;
+}
+
+.content {
+	width: 50vw;
+	max-width: 50vw;
+	padding-top: 80px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+
+.content h2, .content h3, .content h4, .content p{
+	color: #595B5A;
+}
+
+.content a{
+	color: #14C3A2;
+	display: inline-block;
+}
+
+/*Weird styles for sticky footer.  Thanks, CSS*/
+.content:after {
+	content:"";
+	display: block;
+}
+
+.footer, .content:after {
+	height: 100px;
+}
+
+/*Forms styles*/
+.Libreoform{
+	padding: 50px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+.Libreoform p, select p{
+	color: #595B5A;
+	margin: 0px !important;
+}
+
+.Libreoform h3{
+	margin-bottom: 10px;
+}
+
+
+.input{
+	display: inline-block;
+	padding-right: 20vw;
+}
+
+#warningtext {
+	color: red;
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+}
+
+.box, select {
+	border: 2px solid #595B5A;
+	background: #fff;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 20px;
+}
+
+.submit {
+	padding: 10px;
+	margin: 10 10 10 0;
+	border: 2px solid #14C3A2;
+	color: #14C3A2;
+	font-weight: 600;
+	background: #595B5A;
+}
+
+.submit:hover {
+	cursor: pointer;
+}
+
+.submit:active {
+	color: #595B5A;
+	border: 2px solid #595B5A;
+	background: #14C3A2;
+}
+
+
+/*Sidebar styles*/
+#sidebar {
+	background: #595B5A;
+	width: 18vw;
+	margin: 0px;
+	padding: 20px 0px;
+	display: inline-block;
+	position: absolute;
+	top: 70px;
+	left: 0px;
+}
+
+#sidebar ul{
+	list-style: none outside none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#sidebar ul li{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#sidebar ul li a{
+	color: #fff;
+	padding: 10px 0px;
+	font-weight: 600;
+}
+
+#sidebar ul li a:hover {
+	color: #14C3A2;
+	background-color: rgba(255, 255, 255, .2);
+}
+
+/*logout page*/
+.logout{
+	font-size: 24px;
+	color: #595B5A;
+	text-align: center;
+	width: 100%;
+}
+
+/*About page*/
+.about, #profile{
+	text-align: left;
+}
+
+/*Searchbar*/
+.searchinput{
+	width: auto;
+	max-width: 80%;
+   	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #14C3A2;
+	padding: 5px;
+	margin: 5px;
+}
+
+.searchsubmit{
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	background: #14C3A2;
+	border: 2px solid white;
+   	padding: 5px;
+	margin: 5px;
+}   
+
+.searchsubmit:hover {
+	cursor: pointer;
+}
+
+.searchsubmit:active {
+	background: #fff;
+	color: #14C3A2;
+}
+
+.radio{
+	display: inline-block;
+}
+
+/*Footer*/
+.footer{
+	background: #595B5A;
+	width: 100vw;
+	max-width: 100vw;
+	text-align: left;
+	margin:0px;
+}
+
+.footer p{
+	color: #fff;
+	padding: 15px 0px 0px 30px;
+	margin: 0px;
+}
+
+.footer a{
+	display: inline-block;
+	color: #14C3A2;
+}
